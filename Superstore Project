@@ -1,0 +1,16 @@
+SELECT *FROM superstore
+ORDER BY price;
+
+SELECT MAX(price)
+FROM superstore
+WHERE category='Electronics';
+
+SELECT SUM(price)
+FROM superstore
+WHERE price
+GROUP BY category='KitchenSupplies';
+
+SELECT (stock_quantity)
+FROM superstore
+WHERE stock_quantity
+GROUP BY item_name='AirPurifier';
